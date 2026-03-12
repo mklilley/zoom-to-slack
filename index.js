@@ -124,6 +124,9 @@ async function postToSlack(payload) {
   }
 }
 
+app.get('/', (_req, res) => {
+  res.status(200).send('ok');
+});
 
 app.post('/', (req, res) => {
   if (!process.env.ZOOM_WEBHOOK_SECRET_TOKEN) {
