@@ -199,6 +199,6 @@ app.post('/', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Zoom webhook server listening on port ${PORT}`);
-  console.log(`Health check: GET /healthz`);
-  console.log(`Webhook path: POST /zoom/webhook`);
+  console.log(`Health check: GET /`);
+  console.log(`Webhook path: POST /`);
 });
